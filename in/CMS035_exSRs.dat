@@ -1,0 +1,16 @@
+Bin	pT_lep1	pT_lep1	pT_lep2	pT_lep2	Nj	Nj	Nb	Nb	MET	MET	HT	HT	mTmin	mTmin	Bkg	bg_err	Data
+1	25	Inf.	25	Inf.	2	Inf.	0	0	50	300	0	1125	0	120	700	130	685
+2	25	Inf.	25	Inf.	2	Inf.	0	0	50	300	300	1125	120	Inf.	11	2.2	11
+3	25	Inf.	25	Inf.	2	Inf.	1	1	50	300	0	1125	0	120	477	120	482
+4	25	Inf.	25	Inf.	2	Inf.	1	1	50	300	300	1125	120	Inf.	8.4	3.5	8
+5	25	Inf.	25	Inf.	2	Inf.	2	2	50	300	0	1125	0	120	137	25	152
+6	25	Inf.	25	Inf.	2	Inf.	2	2	50	300	300	1125	120	Inf.	4.9	1.2	8
+7	25	Inf.	25	Inf.	2	Inf.	3	Inf.	50	300	0	1125	0	120	11.6	3.1	10
+8	25	Inf.	25	Inf.	2	Inf.	3	Inf.	50	300	300	1125	120	Inf.	0.8	0.24	3
+9	25	Inf.	25	Inf.	2	Inf.	0	Inf.	300	Inf.	300	Inf.	0	Inf.	25.7	5.4	31
+10	25	Inf.	25	Inf.	2	Inf.	0	Inf.	50	300	1125	Inf.	0	Inf.	10.1	2.2	14
+11	25	Inf.	10	25	2	Inf.	0	Inf.	50	300	0	1125	0	120	1070	250	1167
+12	25	Inf.	10	25	2	Inf.	0	Inf.	50	300	0	1125	120	Inf.	1.33	0.46	1
+13	25	Inf.	10	25	2	Inf.	0	Inf.	300	Inf.	300	Inf.	0	Inf.	9.9	2.5	12
+14	25	Inf.	10	25	2	Inf.	0	Inf.	50	300	1125	Inf.	0	Inf.	4.7	1.8	8
+15	10	25	10	25	2	Inf.	0	Inf.	50	Inf.	300	Inf.	0	Inf.	37	12	43
