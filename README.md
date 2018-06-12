@@ -15,11 +15,11 @@ The parameter space can be visualized by projecting the 4-dimensional parameter 
 
 ![some 2D projections](plots/CMS033_2d_projections.png)
 
-Here each rectangle is a signal region. The colors of each bin show if the data has an excess (red) or a deficit (blue), with the statistical significance quantified in number of sigmas.  
+Here each rectangle is a signal region. The colors of each bin show if the data has an excess (red) or a deficit (blue), with the statistical significance quantified in number of sigmas.  
 _To be precise, the **local** significance for signal in a dark red rectangle would be 3 sigmas (99.7% CL), while a dark blue rectangle has a deficit (if a BSM signal could **reduce** the number of events there, it would have a significance of 3 sigmas)_
 
-The algorithm workings are better shown with a GIF: we scan this parameter space by taking all possible bin dividers (red dashed lines below) and making all possible rectangles (blue and green shading below). For each rectangle, a **rectangular aggregation** is defined by summing all bins overlapping with that aggregation, for which one can then finding the local significance for New Physics.
+The algorithm workings are better shown with a GIF: we scan this parameter space by taking all possible bin dividers (red dashed lines below) and making all possible rectangles (blue and green shading below). For each rectangle, a **rectangular aggregation** is defined by summing all bins overlapping with that aggregation, for which one can then finding the local significance for New Physics.
 
 ![rectangular aggregation GIF](plots/CMS033_RA_scan2d.gif)
 
-This is now a **model-independent** search for New Physics. For this CMS search, from the 174 signal regions one gets 7492 rectangular aggregations  (note that we stop the GIF after 20 different bins). *Effectively, this search is now testing thousands of signal hypotheses, which would each populate a neighboring subset of signal regions.*
+This is now a **model-independent** search for New Physics. For this CMS search, from the 174 signal regions one gets 7492 rectangular aggregations  (note that we stop the GIF after 20 different bins). *Effectively, this search is now testing thousands of signal hypotheses, which would each populate a neighboring subset of signal regions.*
