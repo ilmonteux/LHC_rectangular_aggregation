@@ -6,7 +6,7 @@ It takes a *N*-dimensional parameter space over which exclusive bins are defined
 Head over to the Jupyter notebook [test.ipynb](test.ipynb) to test the code with the CMS SUSY jets+MET search CMS-SUS-16-033, [link to CMS website](http://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-16-033/index.html)
 
 # description
-I will here describe the working of the algorithm in more details, in reference to the CMS search [SUS-16-033] (http://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-16-033/index.html). The figures have been made with the notebook [test.ipynb](test.ipynb)
+I will here describe the working of the algorithm in more details, in reference to the CMS search [SUS-16-033](http://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-16-033/index.html). The figures have been made with the notebook [test.ipynb](test.ipynb)
 
 The dataset is binned in *N=4* variables, Nj, Nb, HT and MET, namely the number of jets, the unmber of b-tagged jets, the scalar sum of the jet pT and the missing momentum magnitude.  
 174 exclusive bins are defined with respect to these variables, and observed events are compared to the background expectations and their uncertainties.
