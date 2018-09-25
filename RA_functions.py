@@ -63,6 +63,8 @@ def read_SR_defs(input_file):
 
     # bg errors: assume they are +stat+sys,-stat-sys
     if len(err_types) == 4: err_func = lambda x: np.sqrt(max([ x[0]**2 + x[1]**2, x[2]**2 + x[3]**2 ]))
+    # bg errors: assume they are +stat,-stat,sys
+    if len(err_types) == 3: err_func = lambda x: np.sqrt(max([ x[0]**2 + x[2]**2, x[1]**2 + x[2]**2 ]))
     # bg errors: assume they are +err,-err
     if len(err_types) == 2: err_func = lambda x: np.sqrt(max([ x[0]**2, x[1]**2 ]))
     # bg error
@@ -124,7 +126,7 @@ def isbininrange(Bin, var, range):
 
 # function that makes an RA given a list of variables and ranges for each variable
 def makeRA(var_range_list):
-    '''Select bins inside an aggregation defined by a list of kinematic variables and correponding ranges that define the RA'''
+    '''Select bins inside an aggregation defined by a list of kinematic variables and corresponding ranges that define the RA'''
     vars = [var_range[0] for var_range in var_range_list]
     ranges = [var_range[1] for var_range in var_range_list]
     binlist = var_min.keys()
@@ -137,7 +139,7 @@ def printRA(RA,dictionary):
         i_bin = [ dic[0][1] for dic in dictionary].index(Bin)
         print dictionary[i_bin]
 
-def get_RA_from_bins(binlist,dictionary):
+def get_RA_from_bins(binlist, dictionary):
     """Returns range in each kinematic variable that is covered by the input list of bins"""
     mins = {}
     maxs = {}
@@ -177,7 +179,7 @@ def recursive_RA_loop(RAdef, vars):
             RAdef = recursive_RA_loop(RAdef0 + [[var,var_range]],vars[1:])
             res=res+(RAdef)
         return res
-
+    
 # simple seconds > hour_minute_seconds
 def sec_to_hms(t):
     t=int(t)
