@@ -26,7 +26,12 @@ The algorithm runs *recursively* in the kinematic variables, so that it works in
 
 This is now a **model-independent** search for New Physics. It is basically a N-dimensional bump-hunt. *Effectively, this method is now testing thousands of signal hypotheses, which would each populate a (small or large) neighboring subset of signal regions.*
 
-Head over to the [jupyter notebook](test.ipynb) to test the method.  You can also check one of the many talks given on this method and of the interesting excesses found:
+Head over to the [jupyter notebook](test.ipynb) to test the method.  You can also check one of the many talks given on this method and of the interesting excesses found: [talk_CIPANP.pdf](talk_CIPANP.pdf)
 
-<embed src="talk_CIPANP.pdf#view=FitH" width="100%" height="50%" type='application/pdf'> 
+<object data="talk_CIPANP.pdf" type="application/pdf" width="100%" height="400px">
+    <embed src="talk_CIPANP.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="talk_CIPANP.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
 
