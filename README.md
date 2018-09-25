@@ -28,5 +28,5 @@ This is now a **model-independent** search for New Physics. It is basically a N-
 
 Head over to the [jupyter notebook](test.ipynb) to test the method.  You can also check one of the many talks given on this method and of the interesting excesses found:
 
-<embed src="talk_CIPANP.pdf#view=FitH" width="100%" type='application/pdf'> 
+<embed src="talk_CIPANP.pdf#view=FitH" width="100%" height="50%" type='application/pdf'> 
 
