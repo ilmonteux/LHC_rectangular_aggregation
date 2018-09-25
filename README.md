@@ -5,13 +5,13 @@ It takes a *N*-dimensional parameter space over which exclusive bins are defined
 
 Head over to the Jupyter notebook [test.ipynb](test.ipynb) to test the code with the CMS SUSY jets+MET search CMS-SUS-16-033, [link to CMS website](http://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-16-033/index.html)
 
-# description
+# summary
 I will here describe the working of the algorithm in more details, in reference to the CMS search [SUS-16-033](http://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-16-033/index.html). The figures have been made with the notebook [test.ipynb](test.ipynb)
 
-The dataset is binned in *N=4* variables, Nj, Nb, HT and MET, namely the number of jets, the unmber of b-tagged jets, the scalar sum of the jet pT and the missing momentum magnitude.  
+For that search, the dataset is binned in 4 variables, Nj, Nb, HT and MET, namely the number of jets, the unmber of b-tagged jets, the scalar sum of the jet pT and the missing momentum magnitude.  
 174 exclusive bins are defined with respect to these variables, and observed events are compared to the background expectations and their uncertainties.
 
-The parameter space can be visualized by projecting the 4-dimensional parameter space into 2D (or 3D) slices. We will here fix Nj and Nb and look at the HT-MET projection:
+The parameter space can be visualized by projecting the 4-dimensional parameter space into 2D (or 3D) slices. For example, we will here fix Nj and Nb and look at different two-dimensional HT-MET projection:
 
 ![some 2D projections](plots/CMS033_2d_projections.png)
 
@@ -22,4 +22,11 @@ The algorithm workings are better shown with a GIF: we scan this parameter space
 
 ![rectangular aggregation GIF](plots/CMS033_RA_scan2d.gif)
 
-This is now a **model-independent** search for New Physics. For this CMS search, from the 174 signal regions one gets 7492 rectangular aggregations  (note that we stop the GIF after 20 different bins). *Effectively, this search is now testing thousands of signal hypotheses, which would each populate a neighboring subset of signal regions.*
+The algorithm runs *recursively* in the kinematic variables, so that it works in any dimensionality. For this CMS search, we looked at the full four-dimensional dataset, which results in 13,000 distinct aggregations, from the 174 individual signal regions  (note that we stop the GIF after 20 iterations).
+
+This is now a **model-independent** search for New Physics. It is basically a N-dimensional bump-hunt. *Effectively, this method is now testing thousands of signal hypotheses, which would each populate a (small or large) neighboring subset of signal regions.*
+
+Head over to the [jupyter notebook](test.ipynb) to test the method.  You can also check one of the many talks given on this method and of the interesting excesses found:
+
+<embed src="talk_CIPANP.pdf#view=FitH" width="100%" type='application/pdf'> 
+
